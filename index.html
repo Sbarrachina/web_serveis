@@ -1,71 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño Web</title>
-    <link rel="stylesheet" href="works-foto.css">
-    <link rel="stylesheet" href="tienda-online.css">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emma's Furniture Store</title>
+<link rel="stylesheet" href="estilos.css">
 
-    <!-- + links -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
 
-     <!-- Favicon  -->
-     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet"
+href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-     <link rel="stylesheet"
-     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-     <link
+
+<!-- carousel img -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<!--  -->
+
 </head>
-
 <body>
-
     <header class="header">
-        <div class="logo-header">
-          <img src="images/logos_emma/LOGO-ROS-INTERIOR-DESIGN.png" alt="" />
-        </div>
-        <nav class="nav-menu">
-          <input type="checkbox" id="check" />
-          <label for="check" class="checkbtn">
-            <i class="menu-icon"><img src="/images/bars_black.png" alt="" /></i>
-          </label>
-  
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="works.html">TRABAJOS</a></li>
-  
-            <li><a href="productos.html">SERVICIOS</a></li>
-  
-            <li><a href="tienda-online.html">DISEÑOS ONLINE</a></li>
-            <li><a href="sobreMi.html">SOBRE MÍ</a></li>
-            <li><a href="blog.html">BLOG</a></li>
+        <a href="#" class="logo"><img src="/img/venta/logokawai.png" alt="Logo"></a>
 
-            <li><a href="contacto.html">CONTACTO</a></li>
-  
-          </ul>
-        </nav>
-      </header>
+        <ul class="navbar">
+            <li><a href="#" class="active">HOME</a></li>
+            <li><a href="#">TRABAJOS</a></li>
+            <li><a href="#">DISEO ONLINE</a></li>
+            <li><a href="#">SOBRE MI</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">SOBRE MI</a></li>
+            <li><a href="#">CONTACTO</a></li>
+
+
+
+
+        </ul>
+        <div class="header-icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+        </div>
+    </header>
+    
+      
+<!-- 
+  <section id="home" class="section">
+    <h2>Welcome to Emma's Furniture Store</h2>
+    <p>Your one-stop shop for elegant and affordable furniture.</p>
+  </section> -->
+
+
+  <section id="products" class="section">
+    <h2></h2>
+    <div class="slider">
+      
+      <div class="carousel-item">
+        <img src="img/venta/mesamarbol.png" alt="Shelves" class="carousel-image">
+      </div>
+      <div class="carousel-item">
+        <img src="img/venta/mueble.png" alt="Lamp" class="carousel-image">
+
+        <button class="button-slider">
+          <a href="#section1"> ir section One</a>
+        </button>
+
+      </div>
+      <div class="carousel-item">
+      <img src="img/venta/collage_foto1.png" alt="Lamp 2"class="carousel-image">
+      
+    </div>
+    <div class="carousel-item">
+
+      <img src="img/venta/collage2.png" alt="Nightstand"class="carousel-image">
+
+    </div>
+
+    <div class="carousel-item">
+
+      <img src="img/venta/collage3.png" alt="Chair"class="carousel-image">
+
+      <button class="button-slider">
+        <a href="#section1">Ir section Two</a>
+      </button>
+
+       </div>
+
+      <div class="carousel-item">
+
+      <img src="img/venta/collage4.png" alt="Stool"class="carousel-image">
+
+      </div>
+      <div class="carousel-item">
+
+      <img src="img/venta/estanterias copy.png" alt="Nightstand"class="carousel-image">
+    </div>
+
+      <div class="carousel-item">
+
+      <img src="img/venta/lampara copy.png" alt="Chair"class="carousel-image">
+
+      <button class="button-slider">
+        <a href="#section1">ir section tree</a>
+      </button>
+
+    </div>
+
+      <div class="carousel-item">
+
+      <img src="img/venta/silla copy.png" alt="Stool"class="carousel-image">
+    </div>
+
+    </div>
+    
+</section>
+
+
+
+<!-- serveis -->
 
 <!--  listado -->
 
 
-<div class="titulo">
-
-<h1>PRECIOS</h1>
-
-</div>
 
 
 <section class="container-diseño">
-
   
-
   <div class="pricing-box">
     <div class="image-container">
       <div class="image-overlay">
@@ -75,8 +137,6 @@
         </div>
       </div>
     </div>
-    
-
 
     <div class="title-row">
       <h4>ESTANCIA HASTA 15 M2</h4>
@@ -93,12 +153,10 @@
     <div class="btn-row">
       <a href="/contacto.html" class="btn btn-primary">+ INFO</a>
       <a href="#" class="btn btn-primary open-modal-btn" data-modal-target="packUno" data-product-name="PACK UNO">COMPRAR</a>
-
     </div>
   </div>
 
   <div class="pricing-box">
-   
     <div class="image-container">
       <div class="image-overlay">
         <img src="/images/logos_emma/logo_trabajos.png" alt="producto" class="casita">
@@ -123,7 +181,6 @@
     <div class="btn-row">
       <a href="/contacto.html" class="btn btn-primary">+ INFO</a>
       <a href="#" class="btn btn-primary open-modal-btn" data-modal-target="packDos" data-product-name="PACK DOS">COMPRAR</a>
-
     </div>
   </div>
 
@@ -151,15 +208,11 @@
     <div class="btn-row">
       <a href="/contacto.html" class="btn btn-primary">+ INFO</a>
       <a href="#" class="btn btn-primary open-modal-btn" data-modal-target="packTres" data-product-name="PACK TRES">COMPRAR</a>
-
     </div>
-
-    
   </div>
 </section>
 
-
-<!-- Modal comprar  -->
+<!-- Modal comprar -->
 
 <!-- MODAL PARA EL PAGO -->
 <div class="modal" id="checkout-modal">
@@ -179,135 +232,420 @@
   </div>
 </div>
 
-
-
-<!--  -->
-
-<!-- slider regalos -->
-
-<div class="container-slider">
-  <div class="slider" id="slider">
-    <div class="slider__section">
-      <img src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="slider__img">
-      <div class="slider__content">
-        <h2 class="slider__title">PACK UNO</h2>
-        <p class="slider__txt">ESTANCIA HASTA 15 M2 </p>
-        <p class="slider__txt_2">200 € + 15 € </p>
-
-        
-        <a href="" class="btn-shop">REGALAR</a>
-      </div>
-    </div>
-    <div class="slider__section">
-      <img src="https://images.pexels.com/photos/245208/pexels-photo-245208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="slider__img">
-      <div class="slider__content">
-        <h2 class="slider__title">PACK DOS</h2>
-        <p class="slider__txt">ESTANCIA HASTA 25 M2 </p>
-        <p class="slider__txt_2">300 € + 15 € </p>
-
-        <a href="" class="btn-shop">REGALAR</a>
-      </div>
-    </div>
-    <div class="slider__section">
-      <img src="https://images.pexels.com/photos/1571463/pexels-photo-1571463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="slider__img">
-      <div class="slider__content">
-        <h2 class="slider__title">PACK TRES</h2>
-        <p class="slider__txt">ESTANCIA HASTA 30 M2 </p>
-        <p class="slider__txt_2">350 € + 15 € </p>
-
-        <a href="" class="btn-shop">REGALAR</a>
-      </div>
-    </div>
-    <div class="slider__section">
-      <img src="https://images.pexels.com/photos/4210779/pexels-photo-4210779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="slider__img">
-      <div class="slider__content">
-        <h2 class="slider__title">PACK SORPRESA</h2>
-        <p class="slider__txt">DÉJANOS SORPRENDERTE</p>
-        <a href="" class="btn-shop">REGALAR</a>
+  
+  
+  <!-- Modal comprar  -->
+  
+  <!-- MODAL PARA EL PAGO -->
+  <div class="modal" id="checkout-modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title">Checkout</h2>
+      <p>Product Name: <span id="product-name"></span></p>
+      <p>Product Description: <span id="product-description"></span></p>
+      <div class="payment-options">
+        <button class="payment-btn paypal-btn">
+          <i class='bx bxl-paypal'></i> PayPal
+        </button>
+        <button class="payment-btn credit-card-btn">
+          <i class='bx bx-credit-card'></i> Credit Card
+        </button>
       </div>
     </div>
   </div>
-  <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-  <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+  
+  
+<!--  -->
+
+
+<section id="about" class="section">
+  <h2>PRODUCTOS</h2>
+  <p>Explore our collection of high-quality furniture.</p>
+
+  <div class="card-container">
+  
+    <div class="card">
+      <img src="img/venta/silla3.png" alt="Product-1">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn"data-id="product-1">Comprar</a>
+
+
+      
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-1">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/lamaparaguau.jpg" alt="Product Image">
+        <img src="img/lampara.png" alt="Product Image">
+        <img src="img/productos_cards/lampara3.jpg" alt="Product Image">
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+    
+
+    <div class="card">
+      <img src="img/venta/silla2.png" alt="Product-2">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn"data-id="product-1">Comprar</a>
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-2">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/silla blanca.jpg" alt="Product Image">
+        <img src="img/productos_cards/silla.jpg" alt="Product Image">
+        <img src="img/productos_cards/silla6.jpg" alt="Product Image">
+        <img src="img/productos_cards/silla89.jpg" alt="Product Image">
+
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/venta/mesa3.png" alt="Product-3">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn">Comprar</a>
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-3">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/sofa4.jpg" alt="Product Image">
+        <img src="img/productos_cards/sillon picaso.jpg" alt="Product Image">
+        <img src="img/productos_cards/sillon.jpg" alt="Product Image">
+        <img src="img/productos_cards/sofagris.jpg" alt="Product Image">
+       
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/venta/mesa4.png" alt="Product-4">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn">Comprar</a>
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-4">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/escritoriaole.jpg" alt="Product Image">
+        <img src="img/productos_cards/esctirotio_blabk.jpg" alt="Product Image">
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/venta/silla.png" alt="Product 5">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn">Comprar</a>
+
+      
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-5">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/mesa2.jpg" alt="Product Image">
+        <img src="img/productos_cards/mesa3.jpg" alt="Product Image">
+        <img src="img/productos_cards/mesaguau.jpg" alt="Product Image">
+
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/venta/mesa.png" alt="Product-6">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn">Comprar</a>
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-6">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/estanteriaa5.jpg" alt="Product Image">
+        <img src="img/productos_cards/estanteriamola.jpg" alt="Product Image">
+        <img src="img/productos_cards/esanterias6.jpg" alt="Product Image">
+        <img src="img/productos_cards/estanterias2.jpg" alt="Product Image">
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/venta/silla4.png" alt="Product-7">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn">Comprar</a>
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-7">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/taburete2.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete5.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete6.jpg" alt="Product Image">
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img/venta/mesa2.png" alt="Product-7">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn">Comprar</a>
+
+    </div>
+
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-7">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/taburete2.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete5.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete6.jpg" alt="Product Image">
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+    <!--  fila 3 de productos -->
+
+    <div class="card">
+      <img src="img/venta/mesa auiliar.jpg" alt="Product-7">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn">Comprar</a>
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-7">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/taburete2.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete5.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete6.jpg" alt="Product Image">
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/venta/collage4.png" alt="Product-7">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn">Comprar</a>
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-7">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/taburete2.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete5.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete6.jpg" alt="Product Image">
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+
+    <div class="card">
+      <img src="img/venta/silla4.png" alt="Product-7">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn">Comprar</a>
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-7">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/taburete2.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete5.jpg" alt="Product Image">
+        <img src="img/productos_cards/taburete6.jpg" alt="Product Image">
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+
+   
+
+<div class="card">
+  <img src="img/venta/silla.png" alt="Nuevo Producto">
+  <h3>NUEVO PRODUCTO</h3>
+  <p>Descripción del nuevo producto.</p>
+  <button class="btn open-gallery-btn">Ver Galería</button>
+  <a href="#" class="btn buy-btn">Comprar</a>
 </div>
 
-<!--  opción regalos -->
-<section class="container-regalo">
-  <h2>Opción de Regalo</h2>
-  <p>Complete el formulario para regalar un pack:</p>
+<!-- Modal para la nueva galería de imágenes -->
+<div class="gallery-modal" id="gallery-modal-nuevo">
+  <div class="modal-content">
+    <span class="close-gallery">&times;</span>
+    <img src="ruta/imagen_nueva_galeria_1.jpg" alt="Imagen de Producto">
+    <img src="ruta/imagen_nueva_galeria_2.jpg" alt="Imagen de Producto">
+    <!-- Puedes agregar más imágenes aquí para la nueva galería -->
+  </div>
+</div>
 
-  <form id="regalo-form">
-    <label for="nombre-regalo">Nombre del destinatario:</label>
-    <input type="text" id="nombre-regalo" name="nombre-regalo" required>
 
-    <label for="mensaje-regalo">Mensaje para el destinatario:</label>
-    <textarea id="mensaje-regalo" name="mensaje-regalo" rows="4" required></textarea>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-8">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/mesita1.jpg" alt="Product Image">
+        <img src="img/productos_cards/mesita4.jpg" alt="Product Image">
+        <img src="img/productos_cards/mesita6.jpg" alt="Product Image">
 
-    <button type="button" id="enviar-regalo-btn">Enviar Regalo</button>
-  </form>
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+
+       <div class="card">
+      <img src="img/venta/silla3.png" alt="Product-1">
+      <h3>PRODUCT NAME</h3>
+      <p>Product description goes here.</p>
+      <button class="btn open-gallery-btn">View Gallery</button>
+      <a href="#" class="btn buy-btn"data-id="product-1">Comprar</a>
+
+
+      
+
+    </div>
+    
+    <!-- Modal para la galería de imágenes ampliada -->
+    <div class="gallery-modal" id="gallery-modal-1">
+      <div class="modal-content">
+        <span class="close-gallery">&times;</span>
+        <img src="img/productos_cards/lamaparaguau.jpg" alt="Product Image">
+        <img src="img/lampara.png" alt="Product Image">
+        <img src="img/productos_cards/lampara3.jpg" alt="Product Image">
+
+        <!-- Puedes agregar más imágenes aquí para la galería -->
+      </div>
+    </div>
+
+  </div>
+  
 </section>
 
 
 
 
-<div class="image-container">
-  <img
-  src="/images/img-shop/producto1.png"
-  alt="producto" class="photo">
 
-  <img
-  src="/images/img-shop/interiorismo reformas integrales/1.png"
-  alt="producto" class="photo">
 
-  <img
-  src="/images/img-shop/interiorismo reformas integrales/2.png"
-  alt="producto" class="photo">
+
+
+
+<!-- MODAL PARA EL PAGO -->
+<div class="modal" id="checkout-modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Checkout</h2>
+    <p>Product Name: <span id="product-name"></span></p>
+    <p>Product Description: <span id="product-description"></span></p>
+    <div class="payment-options">
+      <button class="payment-btn paypal-btn">
+        <i class='bx bxl-paypal'></i> PayPal
+      </button>
+      <button class="payment-btn credit-card-btn">
+        <i class='bx bx-credit-card'></i> Credit Card
+      </button>
+    </div>
+  </div>
 </div>
 
 
 
 
 
+<section id="about" class="section">
+    <h2>EQUIPO</h2>
+    <p>We are dedicated to providing high-quality furniture that enhances the beauty of your home.</p>
+  </section>
 
-               
- <!-- footer -->
- <footer class="footer">
-  <div class="container2">
-    <div class="row2">
-      <div class="footer-col">
-        <h4>Emma Rosello Interior Designer</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="proyecto_1/project_one.html">Trabajos</a></li>
-          <li><a href="productos.html">Servicios</a></li>
 
-          <li><a href="tienda-online.html">DISEÑO ONLINE</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </div>
+  <section id="contact" class="section">
+    <h2>CONTACTO </h2>
+    <p>If you have any questions, feel free to reach out to us.</p>
+    <p>Email: info@emmasfurniturestore.com</p>
+  </section>
 
-      <div class="footer-col">
-        <h4>Sígueme</h4>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-        </div>
-      </div>
-    </div>
+  <footer>
+
+    <p>&copy; 2023 Emma's Furniture Store. All rights reserved.</p>
+  </footer>
+
+
+
+ <div class="modal" id="checkout-modal">
+  <div class="modal-content checkout-content">
+    <span class="close">&times;</span>
+    <h2>Checkout</h2>
+    <p>Product Name: <span id="product-name"></span></p>
+    <p>Product Description: <span id="product-description"></span></p>
+    <button class="paypal-btn">Pay with PayPal</button>
+    <button class="credit-card-btn">Pay with Credit Card</button>
   </div>
-</footer>
-               
+</div>
 
-<script src="comprar.js"></script>
-<script src="regalos.js"></script>
+  
+
+  <script src="script.js"></script>
+  <script src="navbar.js"></script>
+  <script src="comprar.js"></script>
 
 
-   		<!-- Botón flotante de WhatsApp -->
-       <div class="whatsapp-button">
-        <a href="https://wa.me/1234567890" target="_blank" title="Chatea con nosotros en WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        </div>
+
 </body>
 </html>
