@@ -1,0 +1,451 @@
+.container-diseño {
+    display: table;
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 150px;
+  }
+  
+  .row {
+    display: table-row;
+  }
+  
+  .pricing-box {
+    display: table-cell;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+
+  .pricing-box h4{
+    padding: 20px;
+  }
+
+  .title-row h4{
+    font-size: 2rem;
+  }
+  
+  .title-row {
+    margin-bottom: 0;
+    background-color: #ebe9eb;
+  }
+  
+  .price-row {
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .price-row h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .price-row span {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .pricing-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  .uno,
+  .tres {
+    background-color: #ebe9eb;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .dos{
+    height: 50px;
+    padding: 10px;
+
+  }
+  
+  .btn-row {
+    text-align: center;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e5351a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .btn:hover {
+    background-color: #101111;
+  }
+  
+  .photo {
+    max-width: 28%;
+    height: auto;
+    display: block;
+    margin-top: -100px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    gap: 20px;
+  }
+  
+  .titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+  
+  .titulo h1 {
+    font-size: 42px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+.casita{
+    width: 10vw;
+    padding: 10px;
+}
+.image-container {
+    position: relative;
+    margin-top: 200px;
+  }
+  
+  .image-overlay {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    color: rgb(17, 16, 16);
+    padding: 5px;
+    font-size: 22px;
+  }
+  
+
+  @media (max-width: 728px) {
+    .container-diseño {
+      width: 100%;
+    }
+  
+    .pricing-box {
+      display: block;
+      margin-bottom: 30px;
+    }
+  
+    .row {
+      display: block;
+    }
+    
+  }
+  @media (max-width: 728px) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .photo {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-overlay {
+      display: block;
+    }
+    
+    .overlay-text {
+      position: static;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .casita{
+      width: 20vw;
+  }
+}
+
+/* Ventana modal comprar */
+/* Estilos para la ventana modal de pago */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  text-align: center;
+  width: 80%; /* Ancho del modal */
+  max-width: 400px; /* Ancho máximo */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilos para el contenido del modal */
+.checkout-content {
+  text-align: center;
+}
+
+.checkout-content h2, .checkout-content p {
+  margin-bottom: 15px;
+}
+
+/* Estilos para el icono de cerrar (cruz) */
+.close {
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #555; /* Color del icono */
+}
+
+/* Estilos para mostrar el modal */
+.modal-active {
+  display: block;
+}
+
+/* Estilos para los botones de pago */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.payment-btn {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  justify-content: center;
+  text-decoration: none; /* Evita que el enlace tenga subrayado */
+}
+
+.payment-btn i {
+  font-size: 20px;
+}
+
+.payment-btn.paypal-btn {
+  background-color: #0070ba;
+  color: #fff;
+}
+
+.payment-btn.paypal-btn:hover {
+  background-color: #00508c;
+}
+
+.payment-btn.credit-card-btn {
+  background-color: #0070ba;
+  color: #fff;
+}
+
+.payment-btn.credit-card-btn:hover {
+  background-color: #00508c;
+}
+
+/*  boton flotante whashsap */
+
+  /* Estilos para el botón flotante de WhatsApp */
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    color: #fff; /* Color del icono de WhatsApp */
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
+  
+  .whatsapp-button a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .whatsapp-button i {
+    font-size: 24px;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128c7e; /* Cambio de color al pasar el ratón */
+  }
+  
+
+  /*  regalo */
+
+  /* Estilos para la sección de regalo */
+.container-regalo {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#regalo-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#regalo-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#regalo-form input,
+#regalo-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#enviar-regalo-btn {
+  padding: 15px;
+  background-color: #e5351a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#enviar-regalo-btn:hover {
+  background-color: #101111;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .container-regalo {
+    padding: 15px;
+  }
+
+  #regalo-form {
+    max-width: 100%;
+  }
+}
+
+/*  slider regalos  */
+/* ESTILOS DE SLIDER */
+.container-slider{
+  margin: 50px 0;
+  position: relative;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+  height: 400px;
+  margin-left: -100%;
+  position: relative;
+}
+.slider:before{
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  height: 100%;
+}
+
+.slider__section {
+  width: 100%;
+  position: relative;
+}
+.slider__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider__btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+}
+.slider__btn:hover { 
+  background: #fff;
+}
+.slider__btn--left{
+  left: 10px;
+}
+.slider__btn--right {
+  right: 10px;
+}
+.slider__content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+  z-index: 999;
+}
+.slider__title{
+  font-size: 2.2em;
+  margin: 0;
+}
+.slider__txt{
+  margin: 5px 0;
+  font-size: 30px;
+}
+
+.slider__txt_2{
+  margin: 5px 0;
+  font-size: 40px;
+}
+.btn-shop{
+  display: block;
+  border: 2px solid #141313;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 150px;
+  margin: 20px auto;
+  transition: all 0.5s;
+}
+.btn-shop:hover{
+  background: #e5351a;
+  color: white;
+}
