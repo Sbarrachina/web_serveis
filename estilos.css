@@ -5,6 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fffbf4;
+ 
 }
 
 
@@ -489,11 +490,11 @@ body {
 
   .title-row h4{
     font-size: 2rem;
+    color: #666;
   }
   
   .title-row {
     margin-bottom: 0;
-    background-color: #ebe9eb;
   }
   
   .price-row {
@@ -504,7 +505,10 @@ body {
   .price-row h1 {
     font-size: 24px;
     margin-bottom: 5px;
+    color: #666;
+    
   }
+
   
   .price-row span {
     font-size: 14px;
@@ -537,7 +541,7 @@ body {
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #e5351a;
+    background-color: #bd7c6a;
     color: #fff;
     text-decoration: none;
     border-radius: 10px;
@@ -732,4 +736,31 @@ body {
 
   
 
+  /*  boton flotante whashsap */
+
+  /* Estilos para el botón flotante de WhatsApp */
+  .whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    color: #fff; /* Color del icono de WhatsApp */
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s;
+  }
   
+  .whatsapp-button a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .whatsapp-button i {
+    font-size: 24px;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #128c7e; /* Cambio de color al pasar el ratón */
+  }
